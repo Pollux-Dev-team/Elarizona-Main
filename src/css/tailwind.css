@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600&family=Libre+Caslon+Text&display=swap');
+@tailwind base;
+
+.main{
+  font-family: 'Cormorant Unicase', serif;
+  background-image: url('../Images/background.webp');
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+.overlay {
+  background: rgba(255,255,255,.75);
+  background-size: 100%;
+}
+
+a {
+  @apply text-primary;
+}
+
+a:hover {
+  @apply text-primary-darker;
+}
+
+
+@tailwind components;
+
+@tailwind utilities;
