@@ -27,5 +27,6 @@ module.exports = {
         logo: "./src/images/logo-square.png",
       },
     },
+    `gatsby-plugin-react-leaflet`,
   ],
 };
