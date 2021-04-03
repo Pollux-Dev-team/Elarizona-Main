@@ -22,11 +22,10 @@ module.exports = {
       },
     },
     {
-      resolve: `@ccalamos/gatsby-source-googlemaps-static`,
+      resolve: `gatsby-plugin-favicon`,
       options: {
-        key: `AIzaSyDKY0k0xH9yQ9oElk7VZX0iqh2_HlC3P9g`,
-        center: `Cairo, Egypt`
-      }
-    }
+        logo: "./src/images/logo-square.png",
+      },
+    },
   ],
 };

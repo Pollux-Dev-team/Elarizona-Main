@@ -12,6 +12,7 @@
     "@ccalamos/gatsby-source-googlemaps-static": "^3.0.1",
     "@emotion/styled": "^11.1.5",
     "gatsby": "^2.18.18",
+    "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-intl": "^0.3.3",
     "gatsby-plugin-react-helmet": "^4.1.0",
     "gatsby-theme-codebushi": "1.0.0",
