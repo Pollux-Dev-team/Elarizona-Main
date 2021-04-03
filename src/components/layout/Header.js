@@ -3,7 +3,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import Button from "../Button";
 import { ThemeContext } from "../../providers/ThemeProvider";
 import { changeLocale, IntlContextConsumer, useIntl } from "gatsby-plugin-intl";
-import logo from '../../Images/logo.png'
+import logo from '../../images/logo.png'
 
 const dict = {
   ar: "English",
@@ -48,18 +48,18 @@ const Header = () => {
           <span className="text-xl md:text-2xl ml-3">{intl.formatMessage({ id: "name" })}</span>
         </div>
 
-        <div class="flex md:hidden">
+        <div className="flex md:hidden">
           <button id="hamburger" onClick={() => {
             const navToggle = document.getElementsByClassName("toggle");
             for (let i = 0; i < navToggle.length; i++) {
               navToggle.item(i).classList.toggle("hidden");
             }
           }}>
-            <img class="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="40" height="40" />
-            <img class="toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="40" height="40" />
+            <img className="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="40" height="40" />
+            <img className="toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="40" height="40" />
           </button>
         </div>
-        <div class="toggle hidden md:flex w-full md:w-auto text-right text-bold mt-5 md:mt-0 border-t-2 border-red-200 md:border-none">
+        <div className="toggle hidden md:flex w-full md:w-auto text-right text-bold mt-5 md:mt-0 border-t-2 border-red-200 md:border-none">
           <AnchorLink href="#about-us" className="block md:inline-block px-4 border-b-2 border-red-300 md:border-none ">{intl.formatMessage({ id: "about_us" })}</AnchorLink>
           <AnchorLink href="#services" className="block md:inline-block px-4 border-b-2 border-red-300 md:border-none">{intl.formatMessage({ id: "services" })}</AnchorLink>
           <AnchorLink href="#contact" className="block md:inline-block px-4 border-b-2 border-red-300 md:border-none">{intl.formatMessage({ id: "contact" })}</AnchorLink>
