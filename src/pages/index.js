@@ -10,9 +10,8 @@ import LeafletMap from "../components/LeafletMap";
 import customerData from "../data/customer-data";
 import SEO from "../components/SEO";
 import { useIntl } from "gatsby-plugin-intl";
-import panel1 from "../images/panel1.png";
-import donut from "../images/donut.png";
 import ThemeProvider from "../providers/ThemeProvider";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default () => {
   const intl = useIntl();
@@ -44,8 +43,12 @@ export default () => {
               </div>
             </div>
             <div className="flex-1 flex flex-col">
-              <img
-                src={donut}
+              <StaticImage
+                src="../images/donut.png"
+                alt="A donut"
+                placeholder="blurred"
+                layout="fixed"
+                width={400}
                 style={donutStyle}
                 className="mx-auto md:mt-24 w-1/2 md:w-3/5"
               />
@@ -67,7 +70,14 @@ export default () => {
           }
           secondarySlot={
             <div className="w-full">
-              <img src={panel1} className="mx-auto" />
+              <StaticImage
+                src="../images/panel1.png"
+                alt="Panel 1"
+                placeholder="blurred"
+                layout="fixed"
+                width={460}
+                className="mx-auto"
+              />
             </div>
           }
         />
