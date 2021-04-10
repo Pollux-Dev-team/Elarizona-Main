@@ -19,11 +19,13 @@ const Footer = () => (
       className="flex -mx-3 justify-center flex-col md:flex-row "
       style={{ flex: "3" }}
     >
-      <div className="flex-1 px-3 pt-6 md:pt-0">
+      <div className="flex-1 flex flex-col px-3 pt-6 md:pt-0">
         <h2 className="text-lg font-semibold">About Us</h2>
         <p className="mt-1 md:mt-5">
           Ridiculus mus mauris vitae ultricies leo integer malesuada nunc.
         </p>
+        <h2 className="text-lg font-semibold mt-5">Our Location</h2>
+        <p className="md:mt-3">57 Baker Street, London, Uk</p>
       </div>
       <div className="flex-1 px-3 pt-6 md:pt-0">
         <h2 className="text-lg font-semibold">Important Links</h2>

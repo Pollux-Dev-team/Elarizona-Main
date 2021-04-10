@@ -1,13 +1,10 @@
 import React from "react";
 import Button, { WhiteButton } from "../components/Button";
 import Card from "../components/Card";
-import CustomerCard from "../components/CustomerCard";
 import LabelText from "../components/LabelText";
 import Layout from "../components/layout/Layout";
 import SplitSection from "../components/SplitSection";
-import StatsBox from "../components/StatsBox";
 import LeafletMap from "../components/LeafletMap";
-import customerData from "../data/customer-data";
 import SEO from "../components/SEO";
 import { useIntl } from "gatsby-plugin-intl";
 import ThemeProvider from "../providers/ThemeProvider";
@@ -42,15 +39,18 @@ export default () => {
                 </p>
               </div>
             </div>
-            <div className="flex-1 flex flex-col">
+            <div className="flex-1 flex flex-col px-16 md:px-0 text-center">
               <StaticImage
                 src="../images/donut.png"
                 alt="A donut"
                 placeholder="blurred"
                 layout="fixed"
-                width={400}
+                width={460}
                 style={donutStyle}
-                className="mx-auto md:mt-24 w-1/2 md:w-3/5"
+                className="mx-auto md:mt-24"
+                imgStyle={{
+                  width: "100%",
+                }}
               />
             </div>
           </div>
@@ -77,6 +77,9 @@ export default () => {
                 layout="fixed"
                 width={460}
                 className="mx-auto"
+                style={{
+                  width: "100%",
+                }}
               />
             </div>
           }
@@ -115,7 +118,7 @@ export default () => {
             </div>
           </div>
         </section>
-        <section id="stats" className="lg:pt-32 text-center">
+        {/* <section id="stats" className="lg:pt-32 text-center">
           <LabelText className="text-black-600 mb-8 text-xl font-bold">
             Our customers get results
           </LabelText>
@@ -170,7 +173,7 @@ export default () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="container mx-auto my-20 py-24 bg-red-600 bg-opacity-75 rounded-lg text-center">
           <h3 className="text-5xl font-semibold text-white">
             Ready to grow your business?

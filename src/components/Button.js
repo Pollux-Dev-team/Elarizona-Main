@@ -8,7 +8,6 @@ const sizes = {
 };
 
 const Button = ({ children, className = "", size, onClick }) => {
-  
   return (
     <button
       type="button"
@@ -30,6 +29,10 @@ const Button = ({ children, className = "", size, onClick }) => {
 export const WhiteButton = styled(Button)`
   background-color: white;
   color: red;
-`
+
+  :hover {
+    color: white;
+  }
+`;
 
 export default Button;
